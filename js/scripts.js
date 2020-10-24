@@ -1,3 +1,4 @@
+//Function for Carousel Pause/Play Toggle
 $(function() {
     $(".carousel").carousel( {interval: 2000 } );
     $("#carouselButton").click(function() {
@@ -11,4 +12,14 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
+
+    /* Click handlers for Modal */
+    $("#reserveButton").click(function() {
+        $("#reserveModal").modal('show')
+    });
+
+    $("#loginButton").click(function() {
+        $("#loginModal").modal('show')
+    });
 });
+
